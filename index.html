@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Stepped Form</title>
+
+
+
+  <link href="styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Muli:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="styles.css">
+  <img src="images/dev.png" class="rounded mx-auto d-block" alt="devliance logo">
+</head>
+
+<!--step1-->
+
+<body onload="init()">
+  <div class="step-container" id="step1" hidden"true">
+    <h2>Step 1</h2>
+    <h3>Fill in the form below and click Next to continue.</h3>
+    <form onsubmit="submitStep1(event)" class="stepped-form">
+      <div class="fields"></div>
+      <input type="text" name="fName" id="firstName" placeholder="First Name" required>
+      <input type="text" name="lName" class="lastName" id="lastName" placeholder="Last Name" required>
+      <input type="submit" value="next" />
+    </form>
+  </div>
+
+  <!--step2-->
+  <div class="step-container" id="step2" hidden"true">
+    <h2>Step 2</h2>
+    <form onsubmit="submitStep2(event)" class="stepped-form">
+      <div class="fields"></div>
+      <input type="text" name="IDnumber" id="idNumber" placeholder="ID number" required>
+      <input type="submit" value="Done">
+    </form>
+  </div>
+<br>
+  <!--step3-->
+  <div class="step-container" id="step3" hidden"true">
+    <h2>Step 3</h2>
+    <form onsubmit="submitStep3(event)" class="stepped-form">
+      <div class="fields"></div>
+    </form>
+  </div>
+
+
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+<footer class="footer">
+ <p>
+   Done by Tenicka
+ </p>
+ <p>
+  Challenge 1, 2 July 2020
+</p>
+
+
+</footer>
+
+</html>

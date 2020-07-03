@@ -1,0 +1,19 @@
+
+.logo{
+    width:500px
+}
+
+.step-container{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Muli', sans-serif;
+    padding: 10rem;
+}
+
+.footer{
+ text-align: center;
+ background-color: #3869E8;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ color: #fff;
+}
